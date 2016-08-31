@@ -1,2 +1,2 @@
-# publicCommonJs
-some common  js plugin
+#Common js
+Some common js plugin or methods.
