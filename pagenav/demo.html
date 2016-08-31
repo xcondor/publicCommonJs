@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/css.css"/>
+    <link rel="stylesheet" href="../css/pageview.css"/>
+
+</head>
+<body>
+
+<ul id="blog_list" class="blog-list"></ul>
+
+<ul id="page_view" class="page_view"></ul>
+
+<script src="../lib/sea.js"></script>
+<script>
+    seajs.config({
+        base: '../',
+        paths: {
+            'mod': 'lib/mod'
+        },
+        alias: {
+            'jquery':'lib/jquery.js'
+        }
+    });
+    seajs.use('../lib/pagenav.js',function(){
+        seajs.use('../lib/pagenav-use.js');
+    });
+</script>
+</body>
+</html>

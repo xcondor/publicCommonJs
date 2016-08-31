@@ -1,0 +1,83 @@
+*{margin:0;padding:0;}
+html{
+  font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/*弹出框*/
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  display:none;
+}
+.dialog{
+  width:400px;
+  background:#fff;
+  position:absolute;
+  border:#eee 1px solid;
+  display:none;
+  z-index:100;
+  .title{
+	font-size:14px;
+	line-height:30px;
+	padding:0 10px;
+	background:#abdeff;
+	text-transform:uppercase;
+  }
+  a.close{
+	color:#333;
+	text-decoration:none;
+	display:block;
+	width:24px;
+	height:24px;
+	position:absolute;
+	right:5px;
+	top:5px;
+	text-align:center;
+  }
+  .content{
+	background:#fff;
+	padding:10px;
+  }
+  .btn-area{
+	text-align:center;
+	padding:10px;
+	a{
+	  text-decoration:none;
+	  color:#333;
+	  &.btn{
+		display:inline-block;
+		padding:5px 20px;
+		border:#ebebeb 1px solid;
+	  }
+	}
+  }
+}
+
+/*排序*/
+.datalist{
+  margin:30px;
+  li{
+	position:relative;
+	line-height:20px;
+	border:#ccc 1px solid;
+	list-style:none;
+	padding:5px 0;
+	font-size:12px;
+	margin:5px 0;
+	.box{
+	  position:absolute;
+	  right:10px;
+	  top:5px;
+	  a{
+		margin:0 10px;
+	  }
+	}
+	span{
+	  margin-left:10px;
+	}
+  }
+}

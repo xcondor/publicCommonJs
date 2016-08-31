@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/css.css"/>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/common.js"></script>
+</head>
+<body>
+    <button style="margin:20px;padding:5px;" class="btn-dialog">Click Dialog</button>
+    <div class="mask"></div>
+    <div class="dialog">
+        <a href="javascript:;" class="close">X</a>
+        <div class="title">test dialog</div>
+        <div class="content">abc</div>
+        <div class="btn-area"><a class="btn-yes" href="#">Yes</a></div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.btn-dialog').on('click',function(){
+            $('.dialog').dialog();
+        })
+    })
+</script>
+</html>
