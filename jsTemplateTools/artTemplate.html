@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/css.css"/>
+    <script src="handlebars/jquery.js"></script>
+    <!--<script src="/lib/artTemplate.js"></script>-->
+    <script src="handlebars/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+    <!--<script id="temp" type="text/html">-->
+        <!--<h1>{{title}}</h1>-->
+        <!--<ul>-->
+            <!--{{each list as value i}}-->
+            <!--<li>索引 {{i + 1}} ：{{value}}</li>-->
+            <!--{{/each}}-->
+        <!--</ul>-->
+    <!--</script>-->
+    <!--<div id="content"></div>-->
+    <!--<script>-->
+            <!--var data = {-->
+                <!--title: '标签',-->
+                <!--list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']-->
+            <!--};-->
+            <!--var html = template('temp', data);-->
+            <!--document.getElementById('content').innerHTML = html;-->
+    <!--</script>-->
+    <script id="tpl" type="text/x-handlebars-template">
+        <div class="demo">
+            <h1>{{name}}</h1>
+            <p>{{context}}</p>
+        </div>
+    </script>
+    <script>
+        $(function(){
+            var tpl =  $("#tpl").html();
+            console.log(tpl);
+            var temp = Handlebars.compile(tpl);
+            var context = { name: "xingyucheng", context: "learn Handlebars"};
+            var html = temp(context);
+            $('body').html(html);
+        });
+    </script>
+
+    <!--block 表达式-->
+    <ul>
+        {{#programe}}
+            <li>{{language}}</li>
+        {{/programme}}
+    </ul>
+    {
+        programe:[
+            {language: "javascript"},
+            {language: "HTML"},
+            {language: "Css"}
+        ]
+    }
+</body>
+</html>

@@ -1,0 +1,9 @@
+/.idea
+/debugMap.js
+*.sh
+*.iml
+/static
+/node_modules
+/workspace.xml
+*.xmlgit
+*.config
