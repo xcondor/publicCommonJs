@@ -7,7 +7,7 @@
     <script type="text/javascript" src="./mock.min.js"></script>
   </head>
   <body>
-    <h1>ssssssd</h1>
+    <h1>2233233</h1>
   <script>
 
   Mock.mock(/\/api\/\.json/, function(options) {
@@ -19,6 +19,7 @@
   }).done(function (data, status, jqXHR) {
     // console.log(data,status,jqXHR);
       if(status=='success'){
+        console.log(JSON.stringify(data, null, 4))
         $('<p>').text(JSON.stringify(data, null, 4))
             .appendTo('body')
       }

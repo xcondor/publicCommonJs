@@ -2,7 +2,7 @@
 Some common js plugin or methods.
 
 热更新命令：
->browser-sync start --server --files "*.*"
+>browser-sync start --server --files *
 
 #闭包的理解
 避免变量污染
