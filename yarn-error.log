@@ -1,0 +1,65 @@
+Arguments: 
+  /usr/local/Cellar/node/10.3.0/bin/node /usr/local/bin/yarn install request
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.3.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "for some common plugin js",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/xcondor/publicCommonJs.git"
+    },
+    "keywords": [
+      "CommonJs"
+    ],
+    "author": "xcondor",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/xcondor/publicCommonJs/issues"
+    },
+    "homepage": "https://github.com/xcondor/publicCommonJs#readme",
+    "devDependencies": {
+      "grunt": "^1.0.1",
+      "grunt-contrib-concat": "^1.0.1",
+      "grunt-contrib-copy": "^1.0.0",
+      "grunt-contrib-cssmin": "^1.0.2",
+      "grunt-contrib-imagemin": "^1.0.1",
+      "grunt-contrib-uglify": "^2.0.0"
+    },
+    "dependencies": {
+      "cheerio": "^1.0.0-rc.2",
+      "request": "^2.87.0",
+      "require": "^2.4.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add request" instead.
+      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at Object.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:21987:13)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13

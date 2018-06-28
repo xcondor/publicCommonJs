@@ -1,0 +1,23 @@
+<html>
+	<head></head>
+	<script>
+		window.i18n={
+			"i18n_network_error":"Please check your network connection and try again later.(in_ID)",
+			"1022":"Coupon code out of limit(in_ID)"
+		}
+		window.getIdlang=function(str){
+			if(str!='' && str!=null){
+				return i18n[str]
+			}else{
+				return ''
+			}
+		}
+	</script>
+	<body>
+		<script>
+			
+			console.log(getIdlang('1022'))
+		</script>
+
+	</body>
+</html>
